@@ -1,6 +1,6 @@
-# Let's create the HTML, CSS, and JavaScript code for the romantic website.
+# Updated HTML, CSS, and JavaScript code for the romantic website with improvements.
 
-html_code = """
+updated_html_code = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +13,11 @@ html_code = """
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to bottom, #b8e6e1, #ffe4e6);
+            background-color: #ffe4e6;
+            background-image: url('https://images.unsplash.com/photo-1516298770261-7eb6586dba1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -23,14 +27,18 @@ html_code = """
 
         .container {
             text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         .heart {
-            width: 200px;
-            height: 200px;
-            background-color: #ffb6c1;
+            width: 250px;
+            height: 250px;
+            background-color: red;
             position: relative;
-            margin: 0 auto;
+            margin: 0 auto 20px;
             transform: rotate(-45deg);
             cursor: pointer;
             transition: transform 0.3s ease;
@@ -43,20 +51,20 @@ html_code = """
         .heart::before,
         .heart::after {
             content: '';
-            width: 200px;
-            height: 200px;
-            background-color: #ffb6c1;
+            width: 250px;
+            height: 250px;
+            background-color: red;
             border-radius: 50%;
             position: absolute;
         }
 
         .heart::before {
-            top: -100px;
+            top: -125px;
             left: 0;
         }
 
         .heart::after {
-            left: 100px;
+            left: 125px;
             top: 0;
         }
 
@@ -122,9 +130,9 @@ html_code = """
 </html>
 """
 
-# Save the HTML code to a file
-file_path = "/mnt/data/valentine_website.html"
-with open(file_path, "w") as file:
-    file.write(html_code)
+# Save the updated HTML code to a file
+updated_file_path = "/mnt/data/updated_valentine_website.html"
+with open(updated_file_path, "w") as file:
+    file.write(updated_html_code)
 
-file_path
+updated_file_path
